@@ -47,5 +47,15 @@ public class Main {
         //increase x by two, two different ways
         x = x + 2;
         x += 2;
+
+        //order of operations
+        System.out.println("About order of operations :");
+        int g = 10 + 3 * 2; //gives 16
+        int f = (10 + 3) * 2; //gives 26
+        System.out.println(g);
+        System.out.println(f);
+
+        //Casting
+        System.out.println("About order of operations :");
     }
 }
