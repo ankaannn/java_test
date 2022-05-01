@@ -107,6 +107,8 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Name:");
         //chaining multiple methods:
+
+        //read a string we have next and nextLine()
         String name = scanner1.nextLine().trim(); //trim takes away spaces
         System.out.println("You are " + name);
     }
