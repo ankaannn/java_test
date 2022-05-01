@@ -1,5 +1,6 @@
 import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
@@ -97,6 +98,16 @@ public class Main {
         String result_2 = currency.format(0.1);
         System.out.println(result_2);
 
-
+        //Read input from  the user
+        System.out.println("About reading input from user");
+        Scanner scanner = new Scanner(System.in);
+        byte age = scanner.nextByte(); //all methods starts with next, nextByte reads a byte
+        //.next -> takes only a word, .nextLine -> takes the entire line the user enters
+        System.out.println("You are " + age);
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Name:");
+        //chaining multiple methods:
+        String name = scanner1.nextLine().trim(); //trim takes away spaces
+        System.out.println("You are " + name);
     }
 }
