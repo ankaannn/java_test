@@ -73,5 +73,19 @@ public class Main {
         Integer.parseInt(string1); //parseInt takes a string and returns an integer
         System.out.println(string1);
 
+        //The Math Class
+        System.out.println("About math class:");
+        int q = Math.round(1.1F);
+        System.out.println(q); //1
+        int w = (int)Math.ceil(1.1F);
+        System.out.println(w); //2
+        w = (int)Math.floor(1.1F);
+        System.out.println(w);
+        w = Math.max(1,2); //min
+        System.out.println(w);
+        double e = Math.random(); //generates a random nr between 0-1
+        System.out.println(e);
+
+
     }
 }
