@@ -56,6 +56,22 @@ public class Main {
         System.out.println(f);
 
         //Casting
-        System.out.println("About order of operations :");
+        System.out.println("About casting:");
+        //implicit casting - when you not going to lose data
+        //byte > short > int > long > float > long
+        short variable = 1; //2bytes
+        int variable2 = variable+2; //4bytes
+        System.out.println(variable2);
+        double variable3 = 1.1;
+        double variable4  = variable3 + 2; //1.1 + 2.0
+        System.out.println(variable4);
+        //explicit casting
+        int variable5 = (int)variable3 + 2;
+        System.out.println(variable5);
+
+        String string1 = "1";
+        Integer.parseInt(string1); //parseInt takes a string and returns an integer
+        System.out.println(string1);
+
     }
 }
