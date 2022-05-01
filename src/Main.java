@@ -28,9 +28,24 @@ public class Main {
         int[][][] array3D = new int[2][3][5]; //create an 3D-array
 
         //constants
+        System.out.println("About constants:");
         //final -> can not change the value after initialize, always use capital letters to name constants
         final float PI = 3.14F; //needs to add F because java compiler needs to know its not a double
         //pi = 1; //can not assign a value because of final, pi is a constant/final value
 
+        //arithmetic expressions
+        System.out.println("About arithmetic expressions :");
+        int result = 10+3;
+        System.out.println(result);
+        int result1 = 10/3;
+        System.out.println(result1); //gives 3, if you want a decimal number you need to convert
+        double result2 = (double)10/(double)3;
+        System.out.println(result2);
+        int x = 1;
+        x++; //++x or x++ --> different, increment before or after
+        System.out.println(x);
+        //increase x by two, two different ways
+        x = x + 2;
+        x += 2;
     }
 }
