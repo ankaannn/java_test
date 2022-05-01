@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 public class Main {
@@ -85,6 +86,16 @@ public class Main {
         System.out.println(w);
         double e = Math.random(); //generates a random nr between 0-1
         System.out.println(e);
+
+        //Formatting Numbers
+        System.out.println("About Formatting numbers");
+        //NumberFormat currency = new NumberFormat(); //can not write like this because NumberFormat is abstract class
+        NumberFormat currency = NumberFormat.getCurrencyInstance(); //calling this method will create an instance of the number format class and return it
+        String result_1 = currency.format(1234567.891);
+        System.out.println(result_1);
+        NumberFormat procent = NumberFormat.getPercentInstance(); //calling this method will create an instance of the number format class and return it
+        String result_2 = currency.format(0.1);
+        System.out.println(result_2);
 
 
     }
